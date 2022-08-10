@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Words by Maugham</title>
+        <link rel="icon" href="?.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant Garamond">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM Serif Display">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Code Pro">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+
+        <!--This is for icons button-->
+        <script src="https://kit.fontawesome.com/a2143a8170.js" crossorigin="anonymous"></script>
+        
+        <!--BG Color -->
+        <style>
+            .bg-color {
+             background-color:#FDF5CA;
+             color: #70443b;
+             /*background-color: rgb(27, 15, 52);*/
+             /*color: rgb(254, 253, 253);*/
+            }
+         </style>
+
+        <!--Text Style-->
+        <style>
+            h1.headline {
+                font-family: DM Serif Display;
+                font-size: 4rem;
+                font-weight: 800px;
+                line-height: 1em;
+                text-align:center;
+                color: #5E454B;
+                margin-bottom: 15px;
+                margin-top: 5px;
+            }
+
+            h2.subhead {
+                font-size: 16px;
+                font-weight: 400px;
+                line-height: 2em;
+                text-align:center;
+                color:#3c2520;
+                margin-bottom:0px;
+                margin-top: 30px;
+            }
+
+            .byline {
+                font-size: 16px;
+                line-height: 0.75em;
+                font-weight: 600px;
+                margin-top: 18px;
+                text-align:center;
+                color: rgb(41, 41, 41);;
+            }
+            
+            .date {
+                font-size: 15px;
+                line-height: 1em;
+                font-weight:600px;
+                letter-spacing:0.5px;
+                margin-top: 18px;
+                text-align:center;
+                color: rgb(41, 41, 41);;
+            }
+
+            h2.title {
+                font-family: DM Serif Display;
+                font-size: 28px;
+                font-weight: 400px;
+                line-height: 2em;
+                letter-spacing: 1.5px;
+                text-align:center;
+                /*-webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: black;*/
+                color: #a7685a;
+                padding-top:20px;
+
+            }
+
+            h2.subtitle {
+                font-family: DM Serif Display;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 2em;
+                text-align:center;
+                color: rgb(41, 41, 41);;
+                margin-bottom:10px;
+            }
+
+            p.body-text {
+                font-size: 1.15rem;
+                line-height: 1.8em;
+                text-align:justify;
+                margin-top:0px;
+                margin-bottom:15px;
+            }
+
+            p.caption {
+                font-family: Cormorant Garamond;
+                font-size: 1.15rem;
+                line-height: 1.4em;
+                text-align:justify;
+                padding-top: 5px;
+                padding-bottom: 20px;
+            }
+
+            .findcode {
+                font-family: Cormorant Garamond;
+                font-size: 1.1rem;
+                line-height: 1.4em;
+                text-align:center;
+                margin-top:0;
+                margin-bottom:15px;
+            }
+
+        </style>
+
+        <!--Page Size-->
+        <style>
+            .header {
+                margin:auto;
+                max-width: 750px;
+                padding-top:80px;
+                padding-bottom:20px;
+            }
+
+            .story-body {
+                margin:auto;
+                max-width: 780px;
+            }
+
+            .bulletpoint {
+                margin:auto;
+                max-width: 700px;
+            }
+
+            .footer {
+                margin:auto;
+                max-width: 750px;
+                padding-top:20px;
+                padding-bottom:20px;
+            }
+
+            .ending {
+                padding-top:0px;
+                padding-bottom:80px;
+                text-align:center;
+            }
+
+        </style>
+
+        <!--Chart Size-->
+        <style>
+            .scrolling-chart {
+                margin:auto;
+                max-width: 1200px;
+            }
+            .vertical-chart {
+                width:100%;
+                max-width:400px;
+                max-height:1000px;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            
+            .chart {
+                margin:auto;
+                max-width: 780px;
+            }
+
+            .treemap-chart {
+                margin:auto;
+                max-width: 780px;
+            }
+
+            .circle-chart {
+                margin:auto;
+                max-width: 600px;
+            }
+
+            .two-chart {
+                margin:auto;
+                max-width: 900px;
+            }
+
+        </style>
+
+        <!--Photo Style--> 
+        <style>
+            img {
+                width: 780px;
+                text-align: center;
+                padding-top:20px;
+                padding-bottom:20px;
+            }
+
+            .footprint {
+                width: 550px;
+                text-align: center;
+                padding-top:20px;
+                padding-bottom:20px;
+            }
+            
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+
+        <!-- icon style-->
+        <style>
+            i.padding {padding-left: 30px;}
+            i.transparency {opacity: 1;}
+        </style>
+
+        <!--ai2html style-->
+        <style>
+            .ai2html-container {
+                font-family: Source Code Pro;
+                font-size: 2rem;
+                font-weight: 800px;
+                line-height: 1em;
+            }
+
+            #scrolly {
+              position: relative;
+              padding: 1rem;
+            }
+      
+            .scrolly-overlay {
+              position: relative;
+              padding: 0;
+              max-width: 60rem;
+              margin: 0 auto;
+            }
+      
+            .sticky-thing {
+              position: -webkit-sticky;
+              position: sticky;
+              left: 0;
+              width: 100%;
+              margin: 0;
+              z-index: 0;
+              top: 0;
+              height: 100vh;
+              /* Center everything inside */
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              justify-content: center;
+            }
+      
+            .step {
+              margin: 0 auto 2rem auto;
+              margin-bottom: 25rem;
+              /*background-color: #eee;*/
+              /*background-color: #fff;*/
+              color: black;
+            }
+      
+            .step p {
+              text-align: center;
+              padding: 1rem;
+              font-size: 1rem;
+            }
+      
+            .hidden { visibility: hidden; }
+      
+            /* When it's less than 700 pixels wide, do normal scrollytelling */
+            @media only screen and (min-width: 700px) {
+              #scrolly.side-by-side {
+                display: flex;
+              }
+      
+              #scrolly.side-by-side > div {
+                flex-basis: 1;
+                flex-grow: 1;
+                flex-shrink: 1;
+                padding: 0.75em;
+              }
+      
+              #scrolly.side-by-side .scrolly-overlay {
+                margin-top: 70vh;
+                order: 0;
+                /* Change these to adjust sizing options */
+                min-width: 15rem;
+                max-width: 22rem;
+              }
+      
+              #scrolly.side-by-side .sticky-thing {
+                order: 1;
+                flex-grow: 2;
+              }
+            }
+        </style>
+        <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.0.4/scrollama.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+    </head>
+
+
+    <body class="bg-color">
+        <div class="header">
+            <h1 class="headline"> Words by Maugham</h1>
+            <h2 class="subhead">
+                Sort through W. Somerset Maugham's <a href="https://www.gutenberg.org/ebooks/author/126">25 books, short stories and plays</a>📖
+                <br>
+                Text Analysis Exercise > A Journalistic Story🦄️
+            </h2>
+            <p class="byline">By Eve Lu</p>
+            <p class="date">August 8, 2022</p>
+        </div>
+        <div class="story-body">
+            <p class="body-text">
+                There are times when I feel perplexed in life. It is almost a sense of obligation for me to feed myself with satire. This is how my life has been connected to <a href="https://en.wikipedia.org/wiki/W._Somerset_Maugham">Somerset Maugham</a>, a great British novelist of the twentieth century who was known for his elaborate, lucid literary style but often with a wry and vicious tongue.            
+            </p>
+            <p class="body-text">
+                In this project, in order to practice my skill of text analysis, I scraped 25 accessible books including short stories and plays written by Maugham from <a href="https://www.gutenberg.org/ebooks/author/126">Project Gutenberg</a>, an online library of free electronic books where you will be provided with free access to plain text publications. I sorted through the publications with over 1.5 million words in total and analyzed: what are the words that were most and least commonly used by Maugham; and how he wrote about his female and male characters.        
+            </p>
+            <p class="caption">
+                <strong> 
+                    🔍 Hover and click the included books for further information👇
+                </strong> 
+            </p>
+        </div>
+        <div class="chart">
+            <div class="flourish-embed flourish-cards" data-src="visualisation/10860361"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        </div>
+        <div class="story-body">
+            <p class="caption">
+                <strong>Note:</strong> there should be 27 e-publications in total that are currently available on Project Gutenberg. However, in my analysis, due to the big data concern, only 25 publications were included which appeared on the first page by searching author's name. <i>Jack Straw: A Farce in Three Acts</i> and <i>The Unknown: A Play in Three Acts</i> are excluded here.            
+            </p>
+        </div>
+        <h2 class="title">Top 1000: What were Maugham's favorites?! </h2>
+        <h2 class="subtitle">
+            Hover to see how many times certain word has showed up 🧐
+        </h2>    
+        <div class="treemap-chart">
+            <div class="flourish-embed flourish-hierarchy" data-src="visualisation/10861139"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        </div>
+        <div class="story-body">
+            <p class="caption">
+                <strong>Note:</strong> this treemap includes top 1000 hot words that were mostly and possibly 'favored' by Maugham. In order to better focus on the data itself, I removed the low-level words by introducing NLTK to filter stopwords and manually added a few more by looking at the raw words collection list. If you want to check my customized stopwords list, please click <a href="url">here</a>.</p>
+        </div>
+        <h2 class="title">Words that only appeared once in all 25 publications </h2>
+        <h2 class="subtitle">How many words that you have actually never seen before 🤭? </h2>    
+        <div class="circle-chart">
+            <div class="flourish-embed flourish-hierarchy" data-src="visualisation/10866988"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        </div>
+        <div class="story-body">
+            <p class="caption">
+                <strong>Note:</strong> the last 1000 words of the data are picked up here. Mis-splitting words by computation, misspelling or non-English words interference at original content and manual data processing might all possibly contribute to the limitation of this text analysis.</p>
+        </div>
+        <h2 class="title">What were these novel characters doing?</h2>
+        <h2 class="subtitle">Let's look at it by...gender in general?!</h2>    
+        <div class="chart">
+            <div class="flourish-embed flourish-chart" data-src="visualisation/10868718"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        </div>
+        <div class="story-body">
+            <p class="caption">
+                <strong> 
+                    👆 Each bar represents one word. Explore the words that were hidden from the labels 🧐.
+                </strong> 
+            </p>
+            <p class="body-text">
+                Depending on the large data amount, I only looked at the words that come after "he" and "she" and meanwhile that are counted over 17 times. 17 being picked up here is because it is the average counts (rounded) between males' avarage (19) and females' avarage (14).
+            </p>
+            <p class="body-text">
+                For example, let's randomly look at a verb in the chart: "murmured".<br>
+            </p>
+            <p class="body-text">
+                When you click the word "murmured", a number "62.03" comes after it, which in this case, it actually means there is a 62.03% chance of the word being applied to female characters while males only take up 37.97% of the total counts. 
+            </p>
+            <p class="body-text">
+                Another fun fact to be aware is that, on the top of the chart, the word "wept" takes up 100% of the total counts, which means every time "wept" shows up among all the publications, it is only used for a female pronoun. Does it imply that male characters never weep in Maugham's works?! Well...probably🤠. Let's take a close look at the top 30 verbs that seperatly comes after "he" and "she" as shown below.
+            </p>
+        </div>
+        <div class="story-body">
+            <p class="caption">
+                <strong>Note:</strong> for this part of the analysis, I manually removed the words that are not considered to be verbs instead of removing all the stopwords for better data accuracy. Each word's total counts vary from one to another. The chart is sorted by the percentage of the action performance by female characters.
+            </p>
+        </div>
+        <h2 class="title">Top 30: Gender Verbs Dynamics</h2>
+        <h2 class="subtitle">Deep mining by gender🔧</h2>    
+        <div class="two-chart">
+            <div class="columns is-mobile is-variable is-8">
+                <div class="column">
+                    <div class="flourish-embed" data-src="visualisation/10869367"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                </div>
+                <div class="column">
+                    <div class="flourish-embed" data-src="visualisation/10869276"><script src="https://public.flourish.studio/resources/embed.js"></script></div>            
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="story-body">
+            <p class="body-text">
+                Words such as "wept", "sobbed", "cried" are displayed with a relatively high percentage in females' action. When you go through all the words listed left, you will note most of them are meant to describe how a person emotionally express her feelings, instead of performing an action to interact with people. By contrast, verbs that applied to males are of more diversity. They are more than verbal behaviors description, which includes words such as "painted", "proposed", "wandered",etc.
+            </p>
+            <p class="body-text">
+                However, we should note any text should be assessed within the context of its historical and cultural setting along together with the analysis and it is also unfair to discuss the phrasing appropriateness without understanding each protagonist's personality and his or her social status in different stories. Meanwhile, the limitation of times might also impact author's handling of characters of different genders. Therefore, to conduct an in-depth text analysis of all Maugham's works, the analysis should be applied separately on every sigle publication to ensure the rigor in this approach.
+            </p>
+        </div>
+        <br>
+
+    <footer class="bg-color">
+        <p></p>
+        <div class="findcode">
+            <p>If you' d like to check my code for this project, they are now available on <a href="url">GitHub</a>.</p>
+            <p>The original data can be found <a href="https://www.gutenberg.org/ebooks/author/126">here</a>.</p>
+        </div>
+        <!--sometimes icon not showing up is because of subsription plan!-->
+        <div class="ending four-icon">
+            <a href="https://github.com/luyi-eve" title="Github" target="_blank"><span class="title"><i class="fab fa-github fa-2xs transparency"></i></span><a>
+            <a href="https://twitter.com/luyi_2021" title="Twitter" target="_blank"><span class="title"><i class="fab fa-twitter padding fa-2xs transparency"></i></span><a>
+            <a href="https://www.instagram.com/eseve__ly/" title="Instagram" target="_blank"><span class="title"><i class="fa-brands fa-instagram padding fa-2xs transparency"></i></span><a>
+            <a href="eseve@live.com" target="_top" title="E-mail"><span class="title"><i class="fas fa-envelope padding fa-2xs transparency"></i></span><a>
+        </div>
+    </footer>
+
