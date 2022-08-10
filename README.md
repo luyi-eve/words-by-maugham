@@ -6,12 +6,7 @@ In this project, in order to practice my text analysis skill🧐, I scraped 25 a
 - And how he wrote about his female and male characters? 
 
 About data folder:
-- raw-25_books_text.rtf: 
-- cleaned-25_books_text.rtf: 
-- most common words folder: 
-- verb by gender:
-
-
-- Mapbox is used to display every registered cell tower🗼in the city of Chicago (T-mobile towers are highlighted for the narrative).
-- QGIS is used to process a large GeoJSON file downloaded from Chicago Data Portal of its current building footprints 🏙️. 
-
+- raw-25_books_text.rtf & cleaned-25_books_text.rtf: these are the raw data I pulled from the webpages along with a clean version I edited after so.
+- text analysis on books by Maugham.ipynb: this is the major data analysis notebook that shows how I scrape, clean and prepare for further analysis.
+- most common words folder: text analysis on most and least commonly used words by Maugham 🔍.
+- verb by gender folder: text analysis on gender verb dynamics.
