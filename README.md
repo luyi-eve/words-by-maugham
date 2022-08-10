@@ -5,7 +5,7 @@ In this project, in order to practice my text analysis skill🧐, I scraped 25 a
 - What are the words that were most and least commonly used by Maugham? 
 - And how he wrote about his female and male characters? 
 
-### About data folder:
+#### About data folder:
 - **raw-25_books_text.rtf & cleaned-25_books_text.rtf:** these are the raw data I pulled from the webpages along with a clean version I edited after so.
 - **text analysis on books by Maugham.ipynb:** this is the major data analysis notebook that shows how I scrape, clean and prepare for further analysis.
 - **most common words folder:** text analysis on most and least commonly used words by Maugham 🔍.
