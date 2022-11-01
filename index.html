@@ -36,24 +36,21 @@
         <!--Text Style-->
         <style>
             h1.headline {
-                font-family: DM Serif Display;
-                font-size: 4rem;
-                font-weight: 800px;
+                font-family: "DM Serif Display";
+                font-size: 3.9rem;
                 line-height: 1em;
                 text-align:center;
                 color: #5E454B;
-                margin-bottom: 15px;
-                margin-top: 5px;
+                margin: -1rem auto auto auto;
             }
+
 
             h2.subhead {
                 font-size: 16px;
-                font-weight: 400px;
                 line-height: 2em;
                 text-align:center;
                 color:#3c2520;
-                margin-bottom:0px;
-                margin-top: 30px;
+                margin:30px 1.2rem 0px 1.2rem;
             }
 
             .byline {
@@ -76,55 +73,116 @@
             }
 
             h2.title {
-                font-family: DM Serif Display;
-                font-size: 28px;
-                font-weight: 400px;
-                line-height: 2em;
+                font-family: "DM Serif Display";
+                font-size: 25px;
+                line-height: 1.5em;
                 letter-spacing: 1.5px;
                 text-align:center;
-                /*-webkit-text-stroke-width: 1px;
-                -webkit-text-stroke-color: black;*/
                 color: #a7685a;
                 padding-top:20px;
-
+                margin:auto 1.2rem;
             }
 
             h2.subtitle {
-                font-family: DM Serif Display;
+                font-family: "DM Serif Display";
                 font-size: 18px;
                 font-weight: 300;
                 line-height: 2em;
                 text-align:center;
-                color: rgb(41, 41, 41);;
-                margin-bottom:10px;
+                color: rgb(41, 41, 41);
+                margin: auto 1.2rem 10px 1.2rem;
             }
 
             p.body-text {
-                font-size: 1.15rem;
+                font-size: 1.06rem;
                 line-height: 1.8em;
-                text-align:justify;
-                margin-top:0px;
-                margin-bottom:15px;
+                text-align:left;
+                margin:1rem 1.2rem
             }
 
             p.caption {
-                font-family: Cormorant Garamond;
-                font-size: 1.15rem;
+                font-family: "Cormorant Garamond";
+                font-size: 1.06rem;
                 line-height: 1.4em;
                 text-align:justify;
-                padding-top: 5px;
-                padding-bottom: 20px;
+                padding: 5px 1.2rem 20px 1.2rem;
             }
 
-            .findcode {
-                font-family: Cormorant Garamond;
+            div.findcode {
+                font-family: "Cormorant Garamond";
                 font-size: 1.1rem;
                 line-height: 1.4em;
                 text-align:center;
-                margin-top:0;
-                margin-bottom:15px;
+                margin:0 1.2rem 15px 1.2rem;
             }
 
+            @media only screen and (min-width: 40em){
+                h1.headline {
+                    font-family: "DM Serif Display";
+                    font-size: 4rem;
+                    line-height: 1em;
+                    text-align:center;
+                    color: #5E454B;
+                    margin-bottom: 15px;
+                    margin-top: 5px;
+                }
+            
+                h2.subhead {
+                    font-size: 17px;
+                    line-height: 2em;
+                    text-align:center;
+                    color:#3c2520;
+                    margin:30px 6rem 0px 6rem;
+                }
+
+                h2.title {
+                    font-family: "DM Serif Display";
+                    font-size: 28px;
+                    line-height: 2em;
+                    letter-spacing: 1.5px;
+                    text-align:center;
+                    /*-webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: black;*/
+                    color: #a7685a;
+                    padding-top:20px;
+                    margin:auto auto;
+                }
+
+                h2.subtitle {
+                    font-family: "DM Serif Display";
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 2em;
+                    text-align:center;
+                    color: rgb(41, 41, 41);;
+                    margin-bottom:10px;
+                }
+
+                p.body-text {
+                    font-size: 1.15rem;
+                    line-height: 1.8em;
+                    text-align:left;
+                    margin:0px auto 15px auto;
+                }
+                p.caption {
+                    font-family: "Cormorant Garamond";
+                    font-size: 1.15rem;
+                    line-height: 1.4em;
+                    text-align:justify;
+                    padding: 5px 0 20px 0;
+                }
+
+                div.findcode {
+                    font-family: "Cormorant Garamond";
+                    font-size: 1.1rem;
+                    line-height: 1.4em;
+                    text-align:center;
+                    max-width: 32rem;
+                    margin: auto auto;
+                    padding-bottom: 1.2rem;
+                }
+            }
+            
         </style>
 
         <!--Page Size-->
@@ -306,7 +364,6 @@
             <h1 class="headline"> Words by Maugham</h1>
             <h2 class="subhead">
                 Sort through W. Somerset Maugham's <a href="https://www.gutenberg.org/ebooks/author/126">25 books, short stories and plays</a>📖
-                <br>
                 Text Analysis Exercise > A Journalistic Story🦄️
             </h2>
             <p class="byline">By Eve Lu</p>
@@ -408,8 +465,7 @@
     <footer class="bg-color">
         <p></p>
         <div class="findcode">
-            <p>If you' d like to check my code for this project, they are now available on <a href="https://github.com/luyi-eve/words-by-maugham">GitHub</a>.</p>
-            <p>The original data can be found <a href="https://www.gutenberg.org/ebooks/author/126">here</a>.</p>
+            <p>If you' d like to check my code for this project, they are now available on <a href="https://github.com/luyi-eve/words-by-maugham">GitHub</a>. The original data can be found <a href="https://www.gutenberg.org/ebooks/author/126">here</a>.</p>
         </div>
         <!--sometimes icon not showing up is because of subsription plan!-->
         <div class="ending four-icon">
